@@ -17,5 +17,6 @@ A API fetch provê ao navegador uma interface para a execução de requisições
 - then : permite definir o bloco executado mediante o cumprimento de uma promise retornando um objeto do tipo Response.
 - catch - permite definir o bloco executado mediante a rejeição de uma promise
 - [requisição](https://www.alura.com.br/artigos/metodos-de-requisicao-do-http)
-
+## `promise-axios`
+Axios é um cliente HTTP baseado-em-promessas para o node.js e para o navegador. É isomórfico (= pode rodar no navegador e no node.js com a mesma base de código). No lado do servidor usa o código nativo do node.js - o modulo http, enquanto no lado do cliente (navegador) usa XMLHttpRequests.
 
