@@ -12,3 +12,10 @@ Uma função callback é uma função passada a outra função como argumento, q
 O método global setTimeout()define um cronômetro que executa uma função ou trecho de código especificado assim que o cronômetro expira.
 ## `promise`
 A promessa de algo re=a acontecer no futuro. Uma Promise é um objeto que representa a eventual conclusão ou falha de uma operação assíncrona. Como a maioria das pessoas consomem promises já criadas, este guia explicará o consumo de promises devolvidas antes de explicar como criá-las.
+## `promise-fetch`
+A API fetch provê ao navegador uma interface para a execução de requisições HTTP através de Promisses
+- then : permite definir o bloco executado mediante o cumprimento de uma promise retornando um objeto do tipo Response.
+- catch - permite definir o bloco executado mediante a rejeição de uma promise
+- [requisição](https://www.alura.com.br/artigos/metodos-de-requisicao-do-http)
+
+
