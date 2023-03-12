@@ -26,6 +26,8 @@ Uma biblioteca JavaScript para construir interfaces de usuário
 - cd projeto
 - npm install
 - npm run dev
+#### `componentes`
+Componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
 
 
 
