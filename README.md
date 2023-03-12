@@ -32,5 +32,9 @@ Componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (
 As propriedades dentro de um componente faz com que você possa passar valores diferentes para cada um deles
 #### `estado`
 O Hook useState permite ter variáveis em componentes funcionais. Você passa o estado inicial para esta função e ele retorna uma variável com o valor atual do estado (não necessariamente o estado inicial).
+#### `imutabilidade`
+O conteúdo da variável não deve ser modificado e sim substituído.Entendesse por imutável, algo não esta sujeito a mudar/alterar. É esse conceito que levamos para o estado
+
+
 
 
