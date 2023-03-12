@@ -10,7 +10,8 @@ function Home() {
       <h1>Lista de presenças</h1>
       <input type="text" placeholder="Digite o nome..." />
       <button type="button">Adicionar</button>
-      <Card/>
+      <Card name="Lucas Filipe" time='23:00'/>
+      <Card name="Maria Helena" time='23:10'/>
     </Container>
   )
 }

@@ -28,6 +28,6 @@ Uma biblioteca JavaScript para construir interfaces de usuário
 - npm run dev
 #### `componentes`
 Componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
-
-
+#### `propriedades`
+As propriedades dentro de um componente faz com que você possa passar valores diferentes para cada um deles
 

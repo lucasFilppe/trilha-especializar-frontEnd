@@ -1,10 +1,15 @@
 import { Container } from "./style";
 
-function Card(){
+interface cardProps{
+    name: string;
+    time: string;
+}
+
+function Card(props: cardProps){
     return(
         <Container>
-            <strong>Lucas Filipe Ramos</strong>
-            <small>22:36:00</small>
+            <strong>{props.name}</strong>
+            <small>{props.time}</small>
         </Container>
     )
 }
