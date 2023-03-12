@@ -30,4 +30,7 @@ Uma biblioteca JavaScript para construir interfaces de usuário
 Componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
 #### `propriedades`
 As propriedades dentro de um componente faz com que você possa passar valores diferentes para cada um deles
+#### `estado`
+O Hook useState permite ter variáveis em componentes funcionais. Você passa o estado inicial para esta função e ele retorna uma variável com o valor atual do estado (não necessariamente o estado inicial).
+
 
