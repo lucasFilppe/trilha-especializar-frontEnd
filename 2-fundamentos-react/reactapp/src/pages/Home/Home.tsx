@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../../components/Card";
 import { Container } from "./style";
 
@@ -6,7 +6,7 @@ function Home() {
   //estado para lidar com mudança de nome
   const [studentName, setStudentName] = useState("");
 
-  //estado para adicionar novo w=estudante
+  //estado para adicionar novo estudante
   const [students, setStudents] = useState([]);
 
   //função para adicionar estudante
@@ -25,6 +25,11 @@ function Home() {
 
     setStudents((prevState) => [...prevState, newStudent]);
   }
+
+  //criando useEffect
+  useEffect(() => {
+    console.log("useEffect foi chamado");
+  }, [students])
 
   return (
     <Container>
