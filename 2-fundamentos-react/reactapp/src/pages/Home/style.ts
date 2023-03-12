@@ -1,10 +1,33 @@
 import styled from 'styled-components'
-import style from 'styled-components'
 
 export const Container = styled.div `
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    header {
+        width: 50%;
+        margin: 84px 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+
+    header img{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin-left: 7px;
+        margin-top: 35px;
+    }
+
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     h1{
         margin: 84px 0  24px;

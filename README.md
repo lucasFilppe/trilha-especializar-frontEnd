@@ -39,5 +39,7 @@ O conteúdo da variável não deve ser modificado e sim substituído.Entendesse 
 Em uma listagem, normalmente utilizamos o map() do JavaScript para trazer todos os dados dessa lista. No React, precisamos passar uma propriedade key para que esse dado nunca se repita e evitar que erros desse tipo aconteçam.
 #### `hooks`
 São funções que permitem conectar os recursos de estados e ciclos de vida do React a partir de componentes funcionais. Normalmente os Hooks iniciam com a palavra use por convenção. Exemplos de hooks: useState, useEffect.
+#### `Header`
+Nessa aula, criamos uma tag header em nossa Home para indicar quem é o usuário que está editando a lista de presença.
 
 
