@@ -9,6 +9,9 @@ function Home() {
   //estado para adicionar novo estudante
   const [students, setStudents] = useState([]);
 
+  //estado para consumir api
+  const [user, setUser] = useState({name: '', avatar: ''})
+
   //função para adicionar estudante
   function handleAddStudent() {
     const newStudent = {
@@ -28,7 +31,15 @@ function Home() {
 
   //criando useEffect
   useEffect(() => {
-    console.log("useEffect foi chamado");
+    fetch('https://api.github.com/users/lucasFilppe')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      setUser({
+        name: data.name,
+        avatar: data.avatar_url
+      })
+    })
   }, [students])
 
   return (
@@ -36,8 +47,8 @@ function Home() {
       <header>
         <h1>Lista de presenças</h1>
         <div>
-          <strong>Lucas</strong>
-          <img src="https://github.com/lucasFilppe.png" alt='foto de perfifil' />
+          <strong>{user.name}</strong>
+          <img src={user.avatar} alt='foto de perfifil' />
         </div>
       </header>
       <input

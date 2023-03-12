@@ -46,3 +46,7 @@ O useEffect é executado automaticamente sempre que o componente é renderizado.
 A estrutura do useEffect é da seguinte forma:
 - // Dentro do objeto devemos colocar todas. ações que serão executadas.
 - // Os arrays definem quais os estados que o useEffect depende.
+
+#### `consumindo API`
+- Utilizamos a API oficial do Github dentro do useEffect com o método fecth()
+- [API](https://api.github.com/users)
