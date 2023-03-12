@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 import {Card, cardProps} from "../../components/Card";
 import { Container } from "./style";
 
+interface ProfileResponse {
+  name: string;
+  avatar_url: string;
+}
+
 export function Home() {
   //estado para lidar com mudança de nome
   const [studentName, setStudentName] = useState("");
@@ -32,7 +37,7 @@ export function Home() {
   //criando useEffect
   useEffect(() => {
     fetch('https://api.github.com/users/lucasFilppe')
-    .then(response => response.json())
+    .then(response => response.json() )
     .then(data => {
       console.log(data);
       setUser({
