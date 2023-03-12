@@ -35,6 +35,8 @@ O Hook useState permite ter variáveis em componentes funcionais. Você passa o 
 #### `imutabilidade`
 O conteúdo da variável não deve ser modificado e sim substituído.Entendesse por imutável, algo não esta sujeito a mudar/alterar. É esse conceito que levamos para o estado
 
+#### `key prop`
+Em uma listagem, normalmente utilizamos o map() do JavaScript para trazer todos os dados dessa lista. No React, precisamos passar uma propriedade key para que esse dado nunca se repita e evitar que erros desse tipo aconteçam.
 
 
 
