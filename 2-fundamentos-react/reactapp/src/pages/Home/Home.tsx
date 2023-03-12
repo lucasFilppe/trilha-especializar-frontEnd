@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Card from "../../components/Card";
+import {Card, cardProps} from "../../components/Card";
 import { Container } from "./style";
 
-function Home() {
+export function Home() {
   //estado para lidar com mudança de nome
   const [studentName, setStudentName] = useState("");
 
   //estado para adicionar novo estudante
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState<cardProps[]>([]);
 
   //estado para consumir api
   const [user, setUser] = useState({name: '', avatar: ''})
@@ -71,4 +71,3 @@ function Home() {
   );
 }
 
-export default Home;

@@ -1,11 +1,11 @@
 import { Container } from "./style";
 
-interface cardProps{
+export interface cardProps{
     name: string;
     time: string;
 }
 
-function Card(props: cardProps){
+export function Card(props: cardProps){
     return(
         <Container>
             <strong>{props.name}</strong>
@@ -14,4 +14,3 @@ function Card(props: cardProps){
     )
 }
 
-export default Card;
